@@ -19,6 +19,9 @@ html {
 body {
   margin: 0;
   padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   font-family: probapro-regular, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -41,4 +44,5 @@ img {
   width: 100%;
   max-width: 100%;
   height: auto;
+  color: aliceblue;
 }
