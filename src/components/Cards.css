@@ -1,4 +1,93 @@
+/* practice */
+
 .container {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.content img {
+  max-width: 8rem;
+  height: 8rem;
+}
+
+.container .card {
+  position: relative;
+}
+
+.container .card .face {
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.container .card .face.face1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dfe1e4;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.container .card:hover .face.face1 {
+  transform: translateY(0);
+  background: #ef508b;
+}
+
+.container .card .face.face2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2 {
+  transform: translateY(0);
+}
+
+.container .card .face.face2 a {
+  margin: 15px 0 0 15px;
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  padding: 8px;
+  border: 1px solid #333;
+}
+
+.container .card .face.face2 a:hover {
+  background: #333;
+  color: #fff;
+}
+
+.container .card .face.face1 .content {
+  opacity: 0.4;
+  transition: 0.5s;
+}
+.container .card:hover .face.face1 .content {
+  opacity: 1;
+}
+
+.container .card .face.face1 .content h3 {
+  margin-top: 1.3rem;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* practice **************************/
+
+/* .container {
   width: 1000px;
   position: relative;
   display: flex;
@@ -78,4 +167,4 @@
   font-size: 1.8rem;
   font-weight: 800;
   text-align: center;
-}
+} */
