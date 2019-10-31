@@ -25,7 +25,7 @@ export default function Cards() {
         <div className="face face1">
           <div className="content">
             <img src={require("../assets/data.png")} alt="" />
-            <h3>Design</h3>
+            <h3>Code</h3>
           </div>
         </div>
         <div className="face face2">
@@ -42,7 +42,7 @@ export default function Cards() {
         <div className="face face1">
           <div className="content">
             <img src={require("../assets/startup.png")} alt="" />
-            <h3>Design</h3>
+            <h3>Speed</h3>
           </div>
         </div>
         <div className="face face2">
