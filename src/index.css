@@ -1,8 +1,4 @@
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
+@import url("https://fonts.googleapis.com/css?family=Unica+One&display=swap");
 *,
 *::before,
 *::after {
@@ -12,7 +8,6 @@ code {
 }
 
 html {
-  font-size: 10px;
   box-sizing: border-box;
 }
 
@@ -22,7 +17,7 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  font-family: probapro-regular, sans-serif;
+  font-family: "Unica One", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
