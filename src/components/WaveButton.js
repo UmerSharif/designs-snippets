@@ -3,8 +3,9 @@ import "./WaveButton.css";
 
 export default function WaveButton() {
   return (
-    <div>
-      <h1>Wave Button</h1>
-    </div>
+    <a href="">
+      <span>Button</span>
+      <div className="liquid"></div>
+    </a>
   );
 }
