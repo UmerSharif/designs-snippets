@@ -76,12 +76,12 @@ export default function Testapi() {
   console.log(newData);
   const {
     relationships: {
-      monitors: { links, data: mdata },
-      services
+      monitors: { links: mlinks, data: mdata },
+      services: { links: slinks, data: sdata }
     },
     attributes: { parameters, statistics }
   } = newData;
-  console.log(links, mdata);
+  console.log(mlinks, mdata);
   console.log(parameters, statistics);
   console.log(mdata[0].id);
 
@@ -91,6 +91,16 @@ export default function Testapi() {
       {mdata.map((d, index) => {
         return <li key={index}>{d.id}</li>;
       })}
+      <section>
+        {sdata.map((d, index) => {
+          return (
+            <ul key={index}>
+              <li>{d.id}</li>
+              <li>{d.type}</li>
+            </ul>
+          );
+        })}
+      </section>
     </div>
   );
 }
