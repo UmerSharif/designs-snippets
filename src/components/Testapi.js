@@ -79,9 +79,10 @@ export default function Testapi() {
       monitors: { links, data: mdata },
       services
     },
-    attributes
+    attributes: { parameters, statistics }
   } = newData;
   console.log(links, mdata);
+  console.log(parameters, statistics);
   return (
     <div>
       <h1>Test api</h1>
