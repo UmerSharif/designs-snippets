@@ -1,6 +1,6 @@
 import React from "react";
 import "./Darkmode.scss";
-export default function Darkmode() {
+export default function Darkmode({ received }) {
   return (
     <>
       <h1>darkmode</h1>
@@ -19,6 +19,7 @@ export default function Darkmode() {
           </a>
         </div>
       </section>
+      {received}
     </>
   );
 }

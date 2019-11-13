@@ -1,5 +1,5 @@
 import React from "react";
-
+import Darkmode from "./Darkmode";
 export default function Testapi() {
   const initial = {
     links: {
@@ -85,6 +85,19 @@ export default function Testapi() {
   console.log(parameters, statistics);
   console.log(mdata[0].id);
 
+  const testingData = (
+    <section>
+      {sdata.map((d, index) => {
+        return (
+          <ul key={index}>
+            <li>{d.id}</li>
+            <li>{d.type}</li>
+          </ul>
+        );
+      })}
+    </section>
+  );
+
   return (
     <div>
       <h1>Test api</h1>
@@ -101,6 +114,7 @@ export default function Testapi() {
           );
         })}
       </section>
+      <Darkmode received={testingData} />
     </div>
   );
 }
