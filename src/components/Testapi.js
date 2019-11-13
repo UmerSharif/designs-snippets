@@ -83,9 +83,14 @@ export default function Testapi() {
   } = newData;
   console.log(links, mdata);
   console.log(parameters, statistics);
+  console.log(mdata[0].id);
+
   return (
     <div>
       <h1>Test api</h1>
+      {mdata.map((d, index) => {
+        return <li key={index}>{d.id}</li>;
+      })}
     </div>
   );
 }
