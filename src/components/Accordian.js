@@ -9,12 +9,12 @@ export default function Accordian(props) {
     contentRef.current.style.maxHeight = active
       ? `${contentRef.current.scrollHeight}px`
       : "0px";
-    console.log(contentRef.current.style.maxHeight);
   }, [contentRef, active]);
 
   const toogleActive = () => {
     setActive(!active);
   };
+
   return (
     <div className="accordion__section">
       <button
