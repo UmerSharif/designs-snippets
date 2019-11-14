@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Chevron() {
+export default function Chevron(props) {
   return (
     <svg
       className={props.className}

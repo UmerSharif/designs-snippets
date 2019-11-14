@@ -1,4 +1,5 @@
 import React from "react";
+import Accordian from "./Accordian";
 export default function Testapi() {
   const initial = {
     links: {
@@ -74,6 +75,7 @@ export default function Testapi() {
   console.log(data[0].attributes);
   console.log(newData);
   const {
+    id: serverID,
     relationships: {
       monitors: { links: mlinks, data: mdata },
       services: { links: slinks, data: sdata }
@@ -113,6 +115,7 @@ export default function Testapi() {
           );
         })}
       </section>
+      <Accordian title={serverID}>{testingData}</Accordian>
     </div>
   );
 }
