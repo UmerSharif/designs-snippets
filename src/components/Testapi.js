@@ -1,5 +1,4 @@
 import React from "react";
-import Darkmode from "./Darkmode";
 export default function Testapi() {
   const initial = {
     links: {
@@ -114,7 +113,6 @@ export default function Testapi() {
           );
         })}
       </section>
-      <Darkmode received={testingData} />
     </div>
   );
 }
