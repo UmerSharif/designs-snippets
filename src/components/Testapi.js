@@ -140,43 +140,62 @@ export default function Testapi() {
   const finaldata = data.map((da, index2) => {
     const {
       id: serverID,
+      type,
+      links: { self: selfLinks },
       relationships: {
         monitors: { links: mlinks, data: mdata },
         services: { links: slinks, data: sdata }
       },
       attributes: { parameters, statistics }
     } = da;
+
     const testingData = (
-      <section key={index2}>
-        {sdata.map((d, index) => {
-          return (
-            <ul key={index}>
-              <li>{d.id}</li>
-              <li>{d.type}</li>
-            </ul>
-          );
-        })}
-      </section>
+      <>
+        <span>ID: {serverID}</span>
+        <span> Type: {type}</span>
+        <section key={index2}>
+          {sdata.map((d, index) => {
+            return (
+              <ul key={index}>
+                <li>{d.id}</li>
+                <li>{d.type}</li>
+              </ul>
+            );
+          })}
+        </section>
+        <p>{selfLinks}</p>
+      </>
     );
-    // console.log(testingData);
 
     return testingData;
   });
-  //console.log(finaldata[0]);
+  console.log(finaldata);
+
+  // const newFinalData = finaldata.map(j => {
+  //   console.log(j);
+  //   const { testingData } = j;
+  //   return testingData;
+  // });
+  // const newOuterData = finaldata.map(outer => {
+  //   const { outerData } = outer;
+  //   return outerData;
+  // });
+  //console.log(newFinalData);
+  // console.log(testingData);
   //new tests here
 
   // console.log(data[0].attributes);
   // console.log(newData);
   // console.log(newData);
   // console.log(newarr);
-  const {
-    id: serverID,
-    relationships: {
-      monitors: { links: mlinks, data: mdata },
-      services: { links: slinks, data: sdata }
-    },
-    attributes: { parameters, statistics }
-  } = data[0];
+  // const {
+  //   id: serverID,
+  //   relationships: {
+  //     monitors: { links: mlinks, data: mdata },
+  //     services: { links: slinks, data: sdata }
+  //   },
+  //   attributes: { parameters, statistics }
+  // } = data[0];
   // console.log(mlinks, mdata);
   // console.log(parameters, statistics);
   // console.log(mdata[0].id);
@@ -198,7 +217,7 @@ export default function Testapi() {
   return (
     <div>
       <h1>Test api</h1>
-      {mdata.map((d, index) => {
+      {/* {mdata.map((d, index) => {
         return <li key={index}>{d.id}</li>;
       })}
       <section>
@@ -210,7 +229,7 @@ export default function Testapi() {
             </ul>
           );
         })}
-      </section>
+      </section> */}
       {finaldata.map((x, index3) => {
         return <Accordian key={index3}>{x}</Accordian>;
       })}

@@ -21,7 +21,7 @@ export default function Accordian(props) {
         className={`accordion ${active ? "active" : ""}`}
         onClick={toogleActive}
       >
-        <p className="accordion__title">{props.title}</p>
+        <p className="accordion__title">View Server Info</p>
         <Chevron
           className={active ? "accordion__icon rotate" : "accordion__icon"}
           width={10}
