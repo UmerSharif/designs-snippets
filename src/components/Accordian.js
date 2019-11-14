@@ -15,13 +15,14 @@ export default function Accordian(props) {
     setActive(!active);
   };
 
-  //taking server id
+  //extracting server id from children passed to accordian
 
   // const x = props.children.props.children.map(d => {
   //   console.log(typeof d.props.children);
   //   return d.props.children;
   // });
   // console.log(x[0][1]);
+  // const serverID = x[0][1];
 
   return (
     <div className="accordion__section">
@@ -29,7 +30,7 @@ export default function Accordian(props) {
         className={`accordion ${active ? "active" : ""}`}
         onClick={toogleActive}
       >
-        <p className="accordion__title">View Server Info</p>
+        <p className="accordion__title">View Server Info </p>
         <Chevron
           className={active ? "accordion__icon rotate" : "accordion__icon"}
           width={10}
