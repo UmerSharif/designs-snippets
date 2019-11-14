@@ -15,6 +15,14 @@ export default function Accordian(props) {
     setActive(!active);
   };
 
+  //taking server id
+
+  // const x = props.children.props.children.map(d => {
+  //   console.log(typeof d.props.children);
+  //   return d.props.children;
+  // });
+  // console.log(x[0][1]);
+
   return (
     <div className="accordion__section">
       <button
