@@ -226,9 +226,27 @@ export default function Testapi() {
       </>
     );
 
-    return testingData;
+    return (
+      <Accordian serverID={serverID} key={index2}>
+        {testingData}
+      </Accordian>
+    );
+
+    // return testingData;
   });
   console.log(finaldata);
+  //testing for seperate serverID and Type
+
+  // const newdata = data => {
+  //   let arr = [];
+  //   for (let key in data) {
+  //     arr.push(data[key].id);
+  //   }
+  //   return arr;
+  // };
+  // const serverIdeftification = newdata(data);
+
+  //testing for seperate serverID and Type
 
   // const newFinalData = finaldata.map(j => {
   //   console.log(j);
@@ -289,9 +307,10 @@ export default function Testapi() {
           );
         })}
       </section> */}
-      {finaldata.map((x, index3) => {
+      {/* {finaldata.map((x, index3) => {
         return <Accordian key={index3}>{x}</Accordian>;
-      })}
+      })} */}
+      {finaldata}
     </div>
   );
 }
