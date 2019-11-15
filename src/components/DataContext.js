@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-export default function Apitest() {
+import React, { useState, useEffect } from "react";
+export default function DataContext() {
   const [state, setState] = useState(null);
 
   useEffect(() => {
@@ -18,9 +17,10 @@ export default function Apitest() {
       });
   }, []);
   console.log(state);
+
   return (
     <div>
-      <h1>Api Test</h1>
+      <h1>DataContext</h1>
     </div>
   );
 }
