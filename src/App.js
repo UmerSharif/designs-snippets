@@ -13,7 +13,7 @@ function App() {
       {/* {/* <Counters /> */}
       {/* <WaveButton /> */}
       {/* <Testapi /> */}
-      <Apitest />
+      {/* <Apitest /> */}
     </div>
   );
 }
