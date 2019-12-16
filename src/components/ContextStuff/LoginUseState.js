@@ -1,7 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useReducer } from "react";
 import { login } from "./utils";
 
+const loginReducer = (state, action) => {
+  return state;
+};
+
 export default function LoginUseState() {
+  const [state, dispatch] = useReducer(loginReducer, initialState);
+
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [isLoading, showLoader] = useState(false);
