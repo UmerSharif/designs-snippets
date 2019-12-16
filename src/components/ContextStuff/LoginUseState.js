@@ -5,6 +5,14 @@ const loginReducer = (state, action) => {
   return state;
 };
 
+const initialState = {
+  username: "",
+  password: "",
+  isLoading: false,
+  error: "",
+  isLoggedIn: false
+};
+
 export default function LoginUseState() {
   const [state, dispatch] = useReducer(loginReducer, initialState);
 
