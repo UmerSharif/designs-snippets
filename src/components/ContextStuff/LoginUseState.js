@@ -1,8 +1,13 @@
-import React, { useState, useReducer } from "react";
+import React, { useReducer } from "react";
 import { login } from "./utils";
 
 const loginReducer = (state, action) => {
   switch (action.type) {
+    case "field":
+      return {
+        ...state,
+        [action.field]: action.value
+      };
     case "login":
       return {
         ...state,
