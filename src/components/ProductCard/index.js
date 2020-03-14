@@ -19,7 +19,7 @@ export default function ProductCard() {
           <div className="stats">
             <div className="stats-container">
               <span className="product_price">$39</span>
-              <span className="product_name">AdclassNameas Originals</span>
+              <span className="product_name">Adidas Originals</span>
               <p>Men's running shirt</p>
 
               <div className="product-options">
