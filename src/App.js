@@ -2,10 +2,11 @@ import React from "react";
 import "./App.css";
 //import Testapi from "./components/Testapi";
 //import Apitest from "./components/Apitest";
-import LoginUseState from "./components/ContextStuff/LoginUseState";
+// import LoginUseState from "./components/ContextStuff/LoginUseState";
 // import WaveButton from "./components/WaveButton";
 // import Counters from "./components/Counters";
 // import Cards from "./components/Cards";
+import ProductCard from "./components/ProductCard";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       {/* <WaveButton /> */}
       {/* <Testapi /> */}
       {/* <Apitest /> */}
-      <LoginUseState />
+      {/* <LoginUseState /> */}
+      <ProductCard />
     </div>
   );
 }
